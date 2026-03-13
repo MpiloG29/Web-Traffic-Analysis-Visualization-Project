@@ -1,0 +1,19 @@
+WEB TRAFFIC ANALYSIS SUMMARY
+==============================
+Period: Oct 13-19, 2025
+Total Visits: 7,474
+Total Unique Visitors: 6,664
+Average Bounce Rate: 37.73%
+
+Top Pages by Visits:
+  Home: 4,033
+  Courses: 1,783
+  Blog: 840
+  Admissions: 535
+  Contact: 283
+
+Traffic Source Performance:
+  Search: 4,108 visits (36.32% bounce)
+  Direct: 2,308 visits (36.19% bounce)
+  Social: 640 visits (45.86% bounce)
+  Referral: 418 visits (39.86% bounce)

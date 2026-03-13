@@ -26,20 +26,20 @@ This repository contains the complete code and documentation for our group resea
 - Daily traffic trends with confidence intervals
 - Multi-line plots showing traffic by source
 - Page-wise performance comparisons
-- [View samples](/visualizations/)
+
 
 ### Statistical Visualizations (Seaborn)
 - Bounce rate correlation heatmaps
 - Page x Source performance matrices
 - Visitor behavior patterns
-- [Explore heatmaps](/visualizations/)
+  
 
 ### Interactive Visualizations (Plotly)
 - Dynamic bar charts with hover information
 - Interactive pie/donut charts
 - Scatter plots with trendlines
 - Multi-plot dashboard with filters
-- [Try interactive versions](/visualizations/*.html)
+
 
 ##  Quick Start
 ```bash

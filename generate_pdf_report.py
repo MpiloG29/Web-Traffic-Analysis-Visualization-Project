@@ -97,7 +97,7 @@ def chart_bounce_by_page(df):
     bounce = (df.groupby("page")["bounce_rate"].mean().sort_values(ascending=False)* 100)       # Converts value to percentage
 
     fig, ax = plt.subplots(figsize=(7, 3), facecolor="white")
-    bar_colors = ["#E53935" if v > 40 else "#FF9800" if v > 35 else "#4CAF50"
+    bar_colors = ["#E53935" if v > 40 else "#FF9800" if v > 35 else "#ED93B1"
                   for v in bounce.values]
     bars = ax.bar(bounce.index, bounce.values, color=bar_colors, width=0.55, alpha=0.88)
 
@@ -165,7 +165,6 @@ def build_pdf(df, stats, output_path):
         leftMargin=2 * cm, rightMargin=2 * cm,
         topMargin=2 * cm, bottomMargin=2 * cm,
         title="Web Traffic Analytics Report",
-        author="Member 3"
     )
 
     story = []
@@ -175,7 +174,7 @@ def build_pdf(df, stats, output_path):
     story.append(Paragraph("Web Traffic Analytics Report", title_style))
     story.append(Paragraph(
         f"Period: {stats['date_range']}  |  Generated: {stats['generated_at']}",
-        ParagraphStyle("meta", fontSize=8, alignment=TA_CENTER, textColor=colors.HexColor("#90A4AE"))
+        ParagraphStyle("meta", fontSize=8, alignment=TA_CENTER, textColor=colors.HexColor("#ed93b1"))
     ))
     story.append(Spacer(1, 0.4 * cm))
     story.append(HRFlowable(width=W, thickness=2, color=colors.HexColor("#D4537E")))
@@ -236,7 +235,7 @@ def build_pdf(df, stats, output_path):
     story.append(HRFlowable(width=W, thickness=1, color=colors.HexColor("#D4537E")))
     story.append(Spacer(1, 0.2 * cm))
     story.append(Paragraph(
-        f"Auto-generated from WebTraffic.csv on {stats['generated_at']} — Member 3",
+        f"Auto-generated from WebTraffic 1.csv on {stats['generated_at']}",
         ParagraphStyle("footer", fontSize=7, alignment=TA_CENTER, textColor=colors.HexColor("#D4537E"))
     ))
 
